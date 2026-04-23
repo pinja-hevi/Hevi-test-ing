@@ -1,0 +1,17 @@
+{
+  "name": "retrovault",
+  "version": "1.0.0",
+  "description": "Inventory management web app for an 8-bit retro games store",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["inventory", "retro", "games", "8-bit"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^12.9.0",
+    "express": "^5.2.1"
+  }
+}
