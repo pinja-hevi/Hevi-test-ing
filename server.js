@@ -106,11 +106,11 @@ app.delete('/api/products/:id', (req, res) => {
 });
 
 // Serve frontend for any unmatched route
-app.get('*', (req, res) => {
+app.get('/{*path}', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`Inventory app running at http://localhost:${PORT}`);
 });
 
